@@ -129,7 +129,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChiDoansController.cs" />
     <Compile Include="Controllers\DoanViensController.cs" />
-    <Compile Include="Controllers\Encrytion.cs" />
+    <Compile Include="Models\Encrytion.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,10 +146,16 @@
     <Compile Include="Migrations\202111230005114_Create_Table_Account.Designer.cs">
       <DependentUpon>202111230005114_Create_Table_Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111230040089_Create_Table_Person.cs" />
+    <Compile Include="Migrations\202111230040089_Create_Table_Person.Designer.cs">
+      <DependentUpon>202111230040089_Create_Table_Person.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ChiDoan.cs" />
     <Compile Include="Models\DoanVien.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Process\StringProcess.cs" />
     <Compile Include="Models\QLDVDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111230005114_Create_Table_Account.resx">
       <DependentUpon>202111230005114_Create_Table_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111230040089_Create_Table_Person.resx">
+      <DependentUpon>202111230040089_Create_Table_Person.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

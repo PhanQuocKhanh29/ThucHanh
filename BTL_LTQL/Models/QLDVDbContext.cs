@@ -14,6 +14,8 @@ namespace BTL_LTQL.Models
         public virtual DbSet<ChiDoan> ChiDoans { get; set; }
         public virtual DbSet<DoanVien> DoanViens { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ChiDoan>()
